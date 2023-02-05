@@ -1,0 +1,152 @@
+/* Variables */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --circle-background: #28303d
+}
+
+/* General Attributes */
+.none-display{
+    display: none !important;
+}
+.rating-button-active{
+    background-color: var(--orange);
+    color: var(--white);
+}
+html{
+    font-family: "Overpass";
+}
+button{
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+h1{
+    color: var(--white);
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*  */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+.card-container, .thank-you-card{
+    display: flex;
+    flex-wrap: wrap;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+    height: auto;
+    border-radius: 20px;
+    padding: 35px 24px 35px 24px;
+    width: 350px;
+}
+.star-icon{
+    background-color: var(--circle-background);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 12px 13px 8px 13px;
+}
+.introduction-heading h1{
+    padding-top: 1.5vh;
+}
+.introduction-content p {
+    margin: 12px 0 12px 0;
+    color: var(--light-grey);
+}
+.rating{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+.rating-button{
+    background-color: var(--circle-background);
+    padding: 18px 22px 18px 22px;
+    border-radius: 50%;
+    color: var(--medium-grey);
+}
+.rating-button:hover{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+.rating-button:focus{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.submit{
+
+}
+.submit-button{
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    height: 40px;
+    border-radius: 20px;
+}
+.submit-button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+/* Thank You */
+.thank-you-card{
+    text-align: center;
+}
+.thank-you-img{
+    margin-bottom: 30px;
+}
+.rating-score{
+    color: var(--orange) !important;
+    background-color: var(--circle-background);
+    padding: 10px 25px 10px 25px;
+    margin: 0;
+    border-radius: 30px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+.rating-score p{
+    margin: 0;
+}
+.thank-you-content{
+    color: var(--light-grey);
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 740px) {
+    .card-container, .thank-you-card{
+        width: 70%;
+    }
+    .rating-button{
+        background-color: var(--circle-background);
+        padding: 14px 18px 14px 18px;
+        border-radius: 50%;
+        color: var(--medium-grey);
+    }
+}
